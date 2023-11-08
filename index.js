@@ -65,3 +65,79 @@ console.log(typeof array1)
 // 5. Create a null variable and an undefined variable
 let Corne = null
 let Balie = undefined
+
+// ***********C. Task 3. functions and contional statements************
+// N.B. READ WITH UNDERSTANDING!!!
+//  1.  Create 3 functions to convert R1000 into dollars, euros and pounds. Take function naming into consideration!
+
+let amount = 1000
+let dollars = 18.4
+let euros = 19.70
+let pounds = 22.63
+
+dollarConvert = 1000/18.4
+euroConvert = 1000/19.70
+poundsConvert = 1000/22.63
+
+console.log("R1000 into Dollars = " +dollarConvert)
+console.log("R1000 into Euros = " +euroConvert)
+console.log("R1000 into Pounds = " +poundsConvert)
+
+//  2.  Create a function that takes a value and calculates the amount entered including VAT (15%), amount entered should be R400.
+//      Then display the message in the console, "The amount after tax is ...".
+
+let amountEnt = 400
+let tax = 0.15
+taxCalc = amountEnt*tax
+Calc = amountEnt+taxCalc
+console.log("The amount after tax is = " +Calc)
+
+//  3.  Declare 3 variables 1stNum, 2ndNum, 3rdNum and assign values of 8, 20 and 14 respectfully. 
+// Now write a function that compares “num1” and “num2” and displays the larger value.
+
+let Num1 = 8
+let Num2 = 20
+let Num3 = 14
+
+    if (Num1 >= Num2) {
+        console.log("Num1 is the largest value: " + Num1)
+    } 
+    else if (Num2 >= Num1) {
+        console.log("Num2 is the largest value: " + Num2)
+    } 
+
+//  4.  Write a function that determines whether “num1” is odd or even and displays the
+//      result. (Tip: remember the modulus operator %)
+
+let Q4 = Num1%2
+
+if (Q4 == 0){
+    console.log("Number is even")
+}
+else if (Q4 > 0){
+    console.log("Number is odd")
+}
+
+//  5.  Next, write a JavaScript conditional statement to sort the three numbers(1stNum, 2ndNum, 3rdNum) from largest to smallest.
+
+// let Num1 = 8
+// let Num2 = 20
+// let Num3 = 14
+
+if(Num1 > Num2 && Num1 > Num3) {
+    if(Num2 > Num3)
+    {
+        console.log("Largest to Smallest:  Num1:"+Num1 +  " Num2:"+Num2 + " Num3:"+Num3)
+    }
+    else{
+        console.log("Largest to Smallest:  Num1:"+Num1 +  " Num3:"+Num3 + " Num2:"+Num2)
+    }
+}
+else if(Num2 > Num1 && Num2 > Num3){
+    if(Num1 > Num3){
+        console.log("Largest to Smallest:  Num2:"+Num2 +  " Num1:"+Num1 + " Num3:"+Num3)
+    }
+    else {
+        console.log("Largest to Smallest:  Num2:"+Num2 +  " Num3:"+Num3 + " Num1:"+Num1)
+    }
+}
